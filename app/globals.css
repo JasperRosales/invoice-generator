@@ -127,3 +127,27 @@
     @apply font-sans;
     }
 }
+
+@media print {
+  @page {
+    size: letter;
+    margin: 0;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  #invoice-sheet-outer {
+    display: block !important;
+  }
+
+  #invoice-sheet {
+    width: 100% !important;
+    max-width: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

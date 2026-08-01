@@ -1,21 +1,30 @@
-# Next.js template
+# Invoice Generator
 
-This is a Next.js template with shadcn/ui.
+A fast, privacy-first invoice generator for freelancers, small businesses, and
+independent professionals. Create professional invoices entirely in the browser —
+no account, no database, no server-side storage.
 
-## Adding components
+## Features
 
-To add components to your app, run the following command:
+- **Invoice details** — number, issue & due dates, PO number, currency, notes, terms
+- **Company & client info** — addresses, contact details, tax ID, logo upload
+- **Line items** — unlimited rows, auto totals, reorder and remove
+- **Calculations** — subtotal, tax rate, percent or flat discount, shipping fees
+- **Two templates** — Modern and Minimal, with a customizable accent color
+- **Live preview** — the invoice updates as you type
+- **Export** — print-friendly layout, PDF download, JSON export, JSON import
+- **Responsive** — works on desktop and mobile, with light & dark mode
 
-```bash
-npx shadcn@latest add button
-```
+## Privacy
 
-This will place the ui components in the `components` directory.
+All invoice data is processed in the browser and kept only in memory. Nothing is
+saved to storage, cookies, or any server — refreshing or closing the tab discards
+your work. Export a PDF or JSON file to save your invoice.
 
-## Using components
 
-To use the components in your app, import them as follows:
+## Tech stack
 
-```tsx
-import { Button } from "@/components/ui/button";
-```
+- Next.js (App Router), React, TypeScript
+- Tailwind CSS v4 with shadcn/ui (Base UI)
+- Zod for data validation
+- react-pdf for PDF generation
